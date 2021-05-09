@@ -9,11 +9,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
     .wholeBar {
-      font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
-      height: 800px;
+     
+      height: 75vw;
       position: absolute;
       top: 1px;
-      width: 100%;
+      width: 100vw;
 
     }
 
@@ -58,6 +58,7 @@
       min-width: 50px;
       min-height: 75px;
       padding-left: -8px;
+      width: 100vw;
     }
 
     #right {
@@ -92,20 +93,21 @@
     }
 
     body {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+      max-width: 100vw;
     }
 
     .middleBar {
       background: #082e76;
       height: 200px;
       width: 90%;
-      position: absolute; 
-      top: 700px;
+      position: relative;
+     
     }
 
     .middleBar p {
       color: #c6705b;
-      font-size: 40px;
+      font-size:calc(20px + 1.5vw);
       padding-top: 20px;
       font-style: italic;
       padding-left: 16vw;
@@ -170,25 +172,25 @@
 
     .newsBar {
 
-      position: absolute;
-      top: 900px;
+      position: relative;
+      
       width: 100%;
       height: 800px;
       overflow: hidden;
-      align-items: center;
+      text-align: center;
     }
     .newsBar p{
-        margin-left: 30%;
+        padding: 10%;
         color:#082e76;
     }
     .newsBar img{
-      height: 306px;
-      width: 306px;
-      margin-left: 35%;
+      height: 50vh;
+      width: 30vw;
+    
     }
     .services{
-      position: absolute;
-      top: 1700px;
+      position: relative;
+  
       width: 100%;
       height: 800px;
       background-color: #082e76;
@@ -196,7 +198,7 @@
 
     .card {
       margin-left: 100px;
-      width: 75vw;
+      width: 90vw;
       height: 200px;
       background-color: none;
       -moz-box-shadow: 5px -5px 5px #888;
@@ -219,12 +221,11 @@
 
     .foot {
       width: 100%;
-      height: 200px;
+      height: 175pxpx;
       padding:30px;
       
       background-color: black;
-      position: absolute;
-      top: 3300px;
+      position: relative;
       display: grid;
       grid-template-columns: 50% 50%;
       grid-template-rows: auto;
@@ -274,11 +275,12 @@ input[type=submit]:hover {
   border-radius: 5px;
   
   padding: 20px;
-  margin-left: 10%;
-margin-right: 10%;
-  position: absolute;
-  top : 2500px;
+  padding-left: 20%;
+  max-width: 100vw;
+ position: relative;
   width: 100%;
+  justify-content: center;
+  text-align: left;
  
   
 }
@@ -345,17 +347,17 @@ form {
       <div class="carousel-inner">
 
         <div class="item active">
-          <img src="images\axle-adamos-Ou6f-by6XF8-unsplash.jpg" alt="image1" style="width:100vw; height:700px;">
+          <img src="images\pexels-anna-shvets-4225920.jpg" alt="image1" style="width:100vw; height:80vh;">
         
         </div>
 
         <div class="item">
-          <img src="images\lumensoft-technologies-WaGMKmJ2F0Y-unsplash.jpg" alt="image2" style="width:100vw;height:700px;">
+          <img src="images\lumensoft-technologies-WaGMKmJ2F0Y-unsplash.jpg" alt="image2" style="width:100vw;height:80vh;">
        
         </div>
 
         <div class="item">
-          <img src="images\carlos-muza-hpjSkU2UYSU-unsplash.jpg" alt="image3" style="width:100vw;height:700px;">
+          <img src="images\carlos-muza-hpjSkU2UYSU-unsplash.jpg" alt="image3" style="width:100vw;height:80vh;">
          
         </div>
 
@@ -386,7 +388,7 @@ form {
 
     <!-- Main, middle bar of the webpage -->
     <div class="header">
-      <img src="images\logonobg.png" alt="img4" style="height:300; width:500px; margin: 1.56vw; align-self: center; ">
+      <img src="images\logonobg.png" alt="img4" style="height:300; width:30vw; margin: 1.56vw; align-self: center; ">
     <!-- nav-bar -->
 
     <div class="navBar">
@@ -394,38 +396,26 @@ form {
       <button>Contact</button><button>People</button>
     </div>
   </div>
-
+  </div>
   <div class="middleBar">
     <p>Why work with Consumer Marketing Consultants?</p>
-    <table>
-      <tr>
-        <th><a href="">Mission statement</a></th>
-      </tr>
-
-      <tr>
-        <th><a href=""></a></th>
-      </tr>
-      <tr style="border-bottom: none;">
-        <th></th>
-      </tr>
-
-
-
-    </table>
+  
+        <h4 style="color: white; padding-left: 10vw;">Mission statement</h1>
+      
   </div>
   <div class="newsBar">
-    <h1 style="color:#c6705b; padding-left:40%; padding-bottom:20px; padding-top: 40px; font-size:2.5vw;">About Me</h1>
+    <h1 style="color:#c6705b; padding-bottom:20px; padding-top: 40px; font-size:calc(12px + 1.5vw);">About Me</h1>
     <img src = "images\dadphoto.jpg">
      <p>sjdkkkkgnddddddddddddddddddddddddddddddddddkkkkkkkkkkkkkkkkslllllllllllll</p>
   </div>
   <div class="services">
-    <h1 style="color:#c6705b; padding-left:40%; padding-bottom:20px; padding-top: 40px; font-size:2.5vw;">Services we provide</h1>
+    <h1 style="color:#c6705b; padding-left:40%; padding-bottom:20px; padding-top: 40px; font-size:calc(12px + 1.5vw);">Services we provide</h1>
     <div class="card"><p>Call Centers</p></div>
     <div class="card"><p>Telemedicine</p></div>
     <div class="card"><p>Clubs</p></div>
   </div>
   <div class ="contact">
-    <h1 style="color:#c6705b; padding-bottom:20px;  margin-left: 30%; padding-top: 40px; font-size:2.5vw;">Contact CMC</h1>
+    <h1 style="color:#c6705b; padding-bottom:20px;  margin-left: 30%; padding-top: 40px; font-size:calc(12px + 1.5vw);">Contact CMC</h1>
     <form action="https://mailthis.to/jimb@consumermkting.com" method="post">
     
     
